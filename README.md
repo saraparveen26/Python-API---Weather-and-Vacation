@@ -12,7 +12,7 @@ As the next requirment, weather data including latitude, longitude, maximum temp
 
 This CSV file is then read to create scatter plots to showcase relationship between Latitude and different weather variables including Maximum Temperature, Humidity, Cloudiness and Wind Speed. All the images for these scatter plots are saved to output_data folder.
 
-Finally, linear regression is computed for various relationships by defining a formula. The original dataframe for cities is split to two: one for the cities in the Northern Hemisphere (with latitude greater than or equal to zero), and second with the cities in Southern Hemisphere (with latitude less than zero). For my dataste, there are 400 cities in Northern Hemishphere and 175 in the Southern Hemisphere.
+Finally, linear regression is computed for various relationships by defining a formula. The original dataframe for cities is split to two: one for the cities in the Northern Hemisphere (with latitude greater than or equal to zero degrees), and second with the cities in Southern Hemisphere (with latitude less than zero degrees). For my dataset, there are 400 cities in Northern Hemishphere and 175 in the Southern Hemisphere.
 
 Linear regression is then plotted including the slope and the regression equation for both Northern and Southern Hemisphere dataframes showing relationship between Latitude and Weather variables. r-values are also displayed for each of these plots. The only strong relationship is displayed between latitude and maximum temperature for cities in the Northern Hemisphere confirming the belief that it gets hotter as you move closer to the equator. All the other variables showed weak to no relationships.
 
@@ -26,4 +26,4 @@ The dataframe is then narrowed down to find my ideal weather conditions. I defin
 
 A new hotels dataframe is then created for my ideal cities to store city, country, coordinates, and humidity data and another blank column is created for hotel names. Using Geoapify API, the first hotel located within 10,000 meters of the coordinates of each ideal vacation city is retrieved and added to the empty Hotel Name column created previously.
 
-As a final step, the ideal cities are then plotted on a map with the size of each city point correspondign to teh humidity level in the city. The hover message is updated to include hotel name and country information.
+As a final step, the ideal cities are then plotted on a map with the size of each city point corresponding to the humidity level in the city. The hover message is updated to include hotel name and country information.
